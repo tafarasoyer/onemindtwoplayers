@@ -227,7 +227,7 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
   </div>
 
 <div class="cta-strip">
-  <a href="YOUR_YOUTUBE_VIDEO_LINK" target="_blank" class="cta-btn cta-primary">▶ Watch Latest Match</a>
+  <a href="#" target="_blank" class="cta-btn cta-primary" id="latest-video-btn">▶ Watch Latest Match</a>
   <a href="https://www.youtube.com/@onemindtwoplayers" target="_blank" class="cta-btn cta-outline">YouTube</a>
   <a href="Yhttps://www.tiktok.com/@onemindtwoplayers" target="_blank" class="cta-btn cta-outline">TikTok</a>
   <a href="https://www.instagram.com/onemindtwoplayers/" target="_blank" class="cta-btn cta-outline">Instagram</a>
@@ -535,7 +535,6 @@ const latestWithVideo = [...matches].reverse().find(m => m.highlight_url);
 if (latestWithVideo) {
   const btn = document.getElementById('latest-video-btn');
   if (btn) btn.href = latestWithVideo.highlight_url;
-}
 }
 function renderArchive(matches) {
   document.getElementById('archive-subtitle').textContent = `Complete Season 1 Record — ${matches.length} Matches`;
