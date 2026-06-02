@@ -531,7 +531,6 @@ function renderHome(matches, standings) {
 
   document.getElementById('story-total').textContent = `${matches.length} matches played`;
   document.getElementById('story-total-desc').textContent = 'Season 1 is underway. Every match counts.';
-}
 const latestWithVideo = [...matches].reverse().find(m => m.highlight_url);
 if (latestWithVideo) {
   const btn = document.getElementById('latest-video-btn');
