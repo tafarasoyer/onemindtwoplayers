@@ -56,7 +56,7 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 .loading{font-family:var(--fc);font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:40px;animation:pulse 1.5s ease-in-out infinite;}
 @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
 
-/* ── HOME ── */
+/* HOME */
 .hero{background:linear-gradient(180deg,rgba(0,180,216,.04) 0%,transparent 60%);border-bottom:1px solid var(--border);padding:40px 24px 32px;}
 .hero-label{font-family:var(--fc);font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--blue);text-transform:uppercase;margin-bottom:8px;text-align:center;}
 .live-dot{display:inline-block;width:7px;height:7px;background:var(--red);border-radius:50%;margin-right:6px;animation:blink 1.2s ease-in-out infinite;}
@@ -76,7 +76,7 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 .rivalry-fill-right{position:absolute;right:0;top:0;bottom:0;background:var(--red);border-radius:0 5px 5px 0;transition:width .8s ease;}
 .rivalry-intensity{font-family:var(--fc);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-top:6px;text-align:center;}
 .cta-strip{display:flex;gap:12px;justify-content:center;padding:24px;flex-wrap:wrap;}
-.cta-btn{font-family:var(--fc);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:10px 24px;border-radius:6px;border:none;cursor:pointer;transition:all .15s;}
+.cta-btn{font-family:var(--fc);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:10px 24px;border-radius:6px;border:none;cursor:pointer;transition:all .15s;text-decoration:none;display:inline-block;}
 .cta-primary{background:var(--blue);color:#fff;}
 .cta-primary:hover{background:#00caf0;}
 .cta-outline{background:transparent;color:var(--text);border:1px solid var(--border);}
@@ -86,12 +86,12 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 .match-feed-item:last-child{border-bottom:none;}
 .match-num{font-family:var(--fc);font-size:12px;color:var(--muted);font-weight:700;width:36px;}
 .match-desc{font-family:var(--fb);font-size:13px;color:var(--muted);flex:1;padding:0 12px;}
-.storyline-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px;}
+.storyline-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px;}
 .storyline-cat{font-family:var(--fc);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;}
 .storyline-title{font-family:var(--fc);font-size:16px;font-weight:700;margin-bottom:4px;}
 .storyline-desc{font-family:var(--fb);font-size:12px;color:var(--muted);}
 
-/* ── ARCHIVE ── */
+/* ARCHIVE */
 .archive-grid{display:grid;gap:8px;max-width:900px;margin:0 auto;padding:24px;}
 .archive-row{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 20px;display:grid;grid-template-columns:48px 1fr auto auto;align-items:center;gap:16px;transition:border-color .15s;}
 .archive-row:hover{border-color:rgba(0,180,216,.3);}
@@ -100,8 +100,9 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 .archive-meta{font-family:var(--fc);font-size:12px;color:var(--muted);margin-top:2px;}
 .play-btn{background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.3);color:var(--blue);border-radius:6px;padding:6px 14px;font-family:var(--fc);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .15s;text-decoration:none;display:inline-block;}
 .play-btn:hover{background:rgba(0,180,216,.2);}
+.play-btn.disabled{opacity:.3;cursor:default;pointer-events:none;}
 
-/* ── PLAYERS ── */
+/* PLAYERS */
 .tab-group{display:flex;gap:4px;padding:0 24px 16px;max-width:900px;margin:0 auto;}
 .tab-btn{font-family:var(--fc);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:8px 18px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;}
 .tab-btn.active{background:var(--blue);color:#fff;border-color:var(--blue);}
@@ -122,7 +123,7 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 .sig-name{font-family:var(--fc);font-size:14px;font-weight:700;color:var(--blue);margin-bottom:4px;}
 .sig-desc{font-family:var(--fb);font-size:12px;color:var(--muted);}
 
-/* ── STATS ── */
+/* STATS */
 .stats-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:900px;margin:24px auto;padding:0 24px;}
 .stats-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:900px;margin:0 auto;padding:0 24px;}
 .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;}
@@ -138,7 +139,7 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 .chart-svg{width:100%;height:100%;}
 .chart-labels{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--fc);font-size:11px;color:var(--muted);}
 
-/* ── HALL OF FAME ── */
+/* HALL OF FAME */
 .hof-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:24px auto;padding:0 24px;}
 .hof-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;position:relative;overflow:hidden;}
 .hof-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);}
@@ -149,9 +150,13 @@ nav{background:rgba(10,10,15,.97);border-bottom:1px solid var(--border);padding:
 /* FOOTER */
 footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 24px;text-align:center;}
 .footer-logo{font-family:var(--fd);font-size:28px;color:var(--blue);letter-spacing:.1em;margin-bottom:8px;}
-.footer-tagline{font-family:var(--fc);font-size:13px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;}
-.footer-ad{background:var(--dark);border:1px dashed rgba(255,255,255,.1);border-radius:6px;height:80px;display:flex;align-items:center;justify-content:center;font-family:var(--fc);font-size:11px;letter-spacing:.08em;color:rgba(255,255,255,.15);text-transform:uppercase;margin:20px auto 0;max-width:700px;}
+.footer-tagline{font-family:var(--fc);font-size:13px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;}
+.footer-social{display:flex;gap:12px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;}
+.footer-social a{font-family:var(--fc);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:6px 14px;border:1px solid var(--border);border-radius:4px;transition:all .15s;}
+.footer-social a:hover{color:var(--blue);border-color:var(--blue);}
+.footer-ad{background:var(--dark);border:1px dashed rgba(255,255,255,.1);border-radius:6px;height:80px;display:flex;align-items:center;justify-content:center;font-family:var(--fc);font-size:11px;letter-spacing:.08em;color:rgba(255,255,255,.15);text-transform:uppercase;margin:0 auto;max-width:700px;}
 
+/* MOBILE */
 @media(max-width:680px){
   .home-grid,.bio-section,.hof-grid{grid-template-columns:1fr;}
   .stats-grid-4{grid-template-columns:repeat(2,1fr);}
@@ -159,7 +164,8 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
   .archive-row{grid-template-columns:36px 1fr auto;}
   .play-btn{display:none;}
   .nav-links{gap:0;}
-  .nav-btn{font-size:12px;padding:6px 8px;}
+  .nav-btn{font-size:11px;padding:6px 6px;}
+  .logo{font-size:16px;}
 }
 </style>
 </head>
@@ -167,9 +173,7 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
 
 <!-- TICKER -->
 <div class="ticker">
-  <span class="ticker-inner" id="ticker-text">
-    LOADING SEASON DATA...&nbsp;&nbsp;&nbsp;
-  </span>
+  <span class="ticker-inner" id="ticker-text">LOADING SEASON DATA...&nbsp;&nbsp;&nbsp;LOADING SEASON DATA...&nbsp;&nbsp;&nbsp;</span>
 </div>
 
 <!-- NAV -->
@@ -184,20 +188,17 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════
-     HOME PAGE
-════════════════════════════════════════════ -->
+<!-- ═══════════════════ HOME ═══════════════════ -->
 <div id="page-home" class="page active">
   <div class="ad-header">Header Ad Placement — 728×90 — Google AdSense / Sponsorship</div>
 
   <div class="hero">
     <div style="text-align:center;max-width:900px;margin:0 auto;">
       <div class="hero-label"><span class="live-dot"></span>Season 1 — Live Dashboard</div>
-
       <div class="matchup-card">
         <div class="fighter">
           <div class="fighter-label" style="color:var(--yellow)">Player A</div>
-          <div class="fighter-name" style="color:var(--yellow)" id="home-lh-name">Left Hand</div>
+          <div class="fighter-name" style="color:var(--yellow)">Left<br>Hand</div>
           <div class="fighter-record" id="home-lh-record">— W — L</div>
         </div>
         <div class="vs-block">
@@ -206,11 +207,10 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
         </div>
         <div class="fighter">
           <div class="fighter-label" style="color:var(--red)">Player B</div>
-          <div class="fighter-name" style="color:var(--red)" id="home-rh-name">Right Hand</div>
+          <div class="fighter-name" style="color:var(--red)">Right<br>Hand</div>
           <div class="fighter-record" id="home-rh-record">— W — L</div>
         </div>
       </div>
-
       <div class="rivalry-meter">
         <div class="rivalry-label">
           <span style="color:var(--yellow)" id="rivalry-lh-pct">Left Hand —%</span>
@@ -226,12 +226,13 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
     </div>
   </div>
 
-<div class="cta-strip">
-  <a href="#" target="_blank" class="cta-btn cta-primary" id="latest-video-btn">▶ Watch Latest Match</a>
-  <a href="https://www.youtube.com/@onemindtwoplayers" target="_blank" class="cta-btn cta-outline">YouTube</a>
-  <a href="Yhttps://www.tiktok.com/@onemindtwoplayers" target="_blank" class="cta-btn cta-outline">TikTok</a>
-  <a href="https://www.instagram.com/onemindtwoplayers/" target="_blank" class="cta-btn cta-outline">Instagram</a>
-</div>
+  <div class="cta-strip">
+    <a href="#" target="_blank" class="cta-btn cta-primary" id="latest-video-btn">▶ Watch Latest Match</a>
+    <a href="https://www.youtube.com/@onemindtwoplayers" target="_blank" class="cta-btn cta-outline">YouTube</a>
+    <a href="https://www.tiktok.com/@onemindtwoplayers" target="_blank" class="cta-btn cta-outline">TikTok</a>
+    <a href="https://www.instagram.com/onemindtwoplayers/" target="_blank" class="cta-btn cta-outline">Instagram</a>
+    <a href="https://www.facebook.com/onemindtwoplayers" target="_blank" class="cta-btn cta-outline">Facebook</a>
+  </div>
 
   <div class="home-grid">
     <div class="panel">
@@ -241,31 +242,27 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
     </div>
     <div class="panel">
       <div class="section-label">Season Storylines</div>
-      <div style="display:grid;gap:12px;" id="home-storylines">
-        <div class="storyline-card">
-          <div class="storyline-cat" style="color:var(--yellow)">Current Leader</div>
-          <div class="storyline-title" id="story-leader">Loading...</div>
-          <div class="storyline-desc" id="story-leader-desc"></div>
-        </div>
-        <div class="storyline-card">
-          <div class="storyline-cat" style="color:var(--blue)">Season Record</div>
-          <div class="storyline-title" id="story-record">Loading...</div>
-          <div class="storyline-desc" id="story-record-desc"></div>
-        </div>
-        <div class="storyline-card">
-          <div class="storyline-cat" style="color:var(--red)">Total Matches</div>
-          <div class="storyline-title" id="story-total">Loading...</div>
-          <div class="storyline-desc" id="story-total-desc"></div>
-        </div>
+      <div class="storyline-card">
+        <div class="storyline-cat" style="color:var(--yellow)">Current Leader</div>
+        <div class="storyline-title" id="story-leader">Loading...</div>
+        <div class="storyline-desc" id="story-leader-desc"></div>
+      </div>
+      <div class="storyline-card">
+        <div class="storyline-cat" style="color:var(--blue)">Season Record</div>
+        <div class="storyline-title" id="story-record">Loading...</div>
+        <div class="storyline-desc" id="story-record-desc"></div>
+      </div>
+      <div class="storyline-card">
+        <div class="storyline-cat" style="color:var(--red)">Total Matches</div>
+        <div class="storyline-title" id="story-total">Loading...</div>
+        <div class="storyline-desc" id="story-total-desc"></div>
       </div>
       <div class="ad-inline">Sidebar Ad — 300×100</div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     ARCHIVE PAGE
-════════════════════════════════════════════ -->
+<!-- ═══════════════════ ARCHIVE ═══════════════════ -->
 <div id="page-archive" class="page">
   <div class="page-header">
     <h1>Match Archive</h1>
@@ -277,9 +274,7 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     PLAYERS PAGE
-════════════════════════════════════════════ -->
+<!-- ═══════════════════ PLAYERS ═══════════════════ -->
 <div id="page-players" class="page">
   <div class="page-header" style="padding-bottom:0;">
     <h1>Players</h1>
@@ -290,7 +285,6 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
     <button class="tab-btn" onclick="showPlayer('right',this)">Right Hand</button>
   </div>
 
-  <!-- LEFT HAND -->
   <div id="player-left" class="player-sub active">
     <div class="player-hero">
       <div class="player-avatar avatar-left">L</div>
@@ -320,7 +314,6 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
     <div class="ad-inline" style="max-width:860px;margin:0 auto 24px;">Player Page Ad Placement</div>
   </div>
 
-  <!-- RIGHT HAND -->
   <div id="player-right" class="player-sub">
     <div class="player-hero">
       <div class="player-avatar avatar-right">R</div>
@@ -350,30 +343,24 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     STATS PAGE
-════════════════════════════════════════════ -->
+<!-- ═══════════════════ STATS ═══════════════════ -->
 <div id="page-stats" class="page">
   <div class="page-header">
     <h1>Stats &amp; Analytics</h1>
     <p id="stats-subtitle">Season 1 — Live Data</p>
   </div>
-
   <div class="stats-grid-4">
     <div class="stat-card"><div class="stat-big" style="color:var(--blue)" id="stat-total">—</div><div class="stat-lbl">Total Matches</div></div>
     <div class="stat-card"><div class="stat-big" style="color:var(--yellow)" id="stat-lh-rate">—</div><div class="stat-lbl">Left Hand Win Rate</div></div>
     <div class="stat-card"><div class="stat-big" style="color:var(--red)" id="stat-rh-rate">—</div><div class="stat-lbl">Right Hand Win Rate</div></div>
     <div class="stat-card"><div class="stat-big" style="color:var(--blue)" id="stat-avg-moves">—</div><div class="stat-lbl">Avg Match Length</div></div>
   </div>
-
   <div class="stats-grid-3" style="margin-top:12px;">
     <div class="stat-card"><div class="stat-big" style="color:var(--yellow)" id="stat-lh-streak">—</div><div class="stat-lbl">Left Hand Best Streak</div></div>
     <div class="stat-card"><div class="stat-big" style="color:var(--red)" id="stat-rh-streak">—</div><div class="stat-lbl">Right Hand Best Streak</div></div>
     <div class="stat-card"><div class="stat-big" style="color:var(--blue)" id="stat-fastest">—</div><div class="stat-lbl">Fastest Win (moves)</div></div>
   </div>
-
   <div class="ad-inline" style="max-width:860px;margin:16px auto;">Ad Placement — Stats Page</div>
-
   <div class="h2h-bar">
     <div class="section-label">Head-to-Head Breakdown</div>
     <div class="h2h-track">
@@ -385,7 +372,6 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
       <span style="color:var(--red)">Right Hand</span>
     </div>
   </div>
-
   <div class="chart-wrap">
     <div class="section-label">Momentum Tracker — Match by Match</div>
     <div class="chart-area">
@@ -405,9 +391,7 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     HALL OF FAME PAGE
-════════════════════════════════════════════ -->
+<!-- ═══════════════════ HALL OF FAME ═══════════════════ -->
 <div id="page-hof" class="page">
   <div class="page-header">
     <h1>Hall of Fame</h1>
@@ -423,35 +407,40 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:32px 2
 <footer>
   <div class="footer-logo">ONE MIND TWO PLAYERS</div>
   <div class="footer-tagline">One Body. Two Rivals. One Season.</div>
+  <div class="footer-social">
+    <a href="https://www.youtube.com/@onemindtwoplayers" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@onemindtwoplayers" target="_blank">TikTok</a>
+    <a href="https://www.instagram.com/onemindtwoplayers/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/onemindtwoplayers" target="_blank">Facebook</a>
+  </div>
   <div class="footer-ad">Footer Ad Placement — 728×90 — Google AdSense / Affiliate</div>
 </footer>
 
 <script>
-// ═══════════════════════════════════════════
-// CONFIG — edit this section only
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+// CONFIG — only edit this section
+// ═══════════════════════════════════════════════════
 const SHEET_ID = '1ndprk1XDq7uIAm_WtlythDw2zFbfUCbPg0XEHiNLy7k';
-const TABS = { matches:'Matches', standings:'Standings', hof:'Hall of Fame' };
+const TABS     = { matches:'Matches', standings:'Standings', hof:'Hall of Fame' };
 
-// Feature flags — flip to true as your season grows
+// Feature flags — change false to true as your season grows
 const FEATURES = {
-  showMomentumChart: true,
-  showHallOfFame: true,
-  showHighlightLinks: true,
-  showAdPlacements: true
+  showMomentumChart : true,
+  showHallOfFame    : true,
+  showHighlightLinks: true
 };
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 // DATA FETCHING
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 async function fetchTab(tabName) {
   const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(tabName)}`;
   try {
-    const res = await fetch(url);
+    const res  = await fetch(url);
     const text = await res.text();
-    const json = JSON.parse(text.substring(47).slice(0,-2));
+    const json = JSON.parse(text.substring(47).slice(0, -2));
     if (!json.table || !json.table.rows) return [];
-    const cols = json.table.cols.map(c => c.label.toLowerCase().replace(/\s+/g,'_'));
+    const cols = json.table.cols.map(c => c.label.toLowerCase().replace(/\s+/g, '_'));
     return json.table.rows
       .filter(row => row.c && row.c.some(cell => cell && cell.v !== null && cell.v !== ''))
       .map(row => {
@@ -465,192 +454,221 @@ async function fetchTab(tabName) {
   }
 }
 
-// ═══════════════════════════════════════════
-// RENDER FUNCTIONS
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════
+function isLeft(winner) {
+  return winner && winner.toString().toLowerCase().includes('left');
+}
+function getPlayer(standings, side) {
+  return standings.find(r => r.player && r.player.toString().toLowerCase().includes(side)) || {};
+}
+function winRate(wins, total) {
+  return total > 0 ? Math.round((wins / total) * 100) + '%' : '—';
+}
+
+// ═══════════════════════════════════════════════════
+// RENDER — TICKER
+// ═══════════════════════════════════════════════════
 function renderTicker(matches, standings) {
-  const lh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('left')) || {};
-  const rh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('right')) || {};
+  const lh    = getPlayer(standings, 'left');
+  const rh    = getPlayer(standings, 'right');
   const total = matches.length;
-  const last = matches[matches.length-1];
-  const lhW = lh.wins || 0; const lhL = lh.losses || 0;
-  const rhW = rh.wins || 0; const rhL = rh.losses || 0;
-  const lastResult = last ? `LATEST: MATCH #${last.match_number} — ${last.winner} WINS` : '';
-  const text = `🏆 SEASON 1 · ${total} MATCHES PLAYED &nbsp;|&nbsp; LEFT HAND ${lhW}W–${lhL}L &nbsp;|&nbsp; RIGHT HAND ${rhW}W–${rhL}L &nbsp;|&nbsp; ${lastResult} &nbsp;|&nbsp; `;
-  const el = document.getElementById('ticker-text');
+  const last  = matches[total - 1];
+  const lhW   = parseInt(lh.wins)   || 0;
+  const lhL   = parseInt(lh.losses) || 0;
+  const rhW   = parseInt(rh.wins)   || 0;
+  const rhL   = parseInt(rh.losses) || 0;
+  const lastTxt = last ? `LATEST: MATCH #${last.match_number} — ${last.winner} WINS` : 'SEASON STARTING SOON';
+  const text  = `🏆 SEASON 1 · ${total} MATCHES PLAYED &nbsp;|&nbsp; LEFT HAND ${lhW}W–${lhL}L &nbsp;|&nbsp; RIGHT HAND ${rhW}W–${rhL}L &nbsp;|&nbsp; ${lastTxt} &nbsp;|&nbsp; `;
+  const el    = document.getElementById('ticker-text');
   el.innerHTML = text + text;
 }
 
+// ═══════════════════════════════════════════════════
+// RENDER — HOME
+// ═══════════════════════════════════════════════════
 function renderHome(matches, standings) {
-  const lh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('left')) || {};
-  const rh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('right')) || {};
-  const lhW = parseInt(lh.wins) || 0;
-  const lhL = parseInt(lh.losses) || 0;
-  const rhW = parseInt(rh.wins) || 0;
-  const rhL = parseInt(rh.losses) || 0;
+  const lh    = getPlayer(standings, 'left');
+  const rh    = getPlayer(standings, 'right');
+  const lhW   = parseInt(lh.wins)   || 0;
+  const lhL   = parseInt(lh.losses) || 0;
+  const rhW   = parseInt(rh.wins)   || 0;
+  const rhL   = parseInt(rh.losses) || 0;
   const total = lhW + rhW;
 
+  // Scoreboard
   document.getElementById('home-lh-record').textContent = `${lhW}W — ${lhL}L`;
   document.getElementById('home-rh-record').textContent = `${rhW}W — ${rhL}L`;
   document.getElementById('home-season-badge').textContent = `Season 1 · ${matches.length} Matches`;
 
+  // Rivalry meter
   if (total > 0) {
-    const lhPct = Math.round((lhW/total)*100);
+    const lhPct = Math.round((lhW / total) * 100);
     const rhPct = 100 - lhPct;
-    document.getElementById('rivalry-lh-pct').textContent = `Left Hand ${lhPct}%`;
-    document.getElementById('rivalry-rh-pct').textContent = `Right Hand ${rhPct}%`;
-    document.getElementById('rivalry-left-bar').style.width = lhPct + '%';
+    document.getElementById('rivalry-lh-pct').textContent   = `Left Hand ${lhPct}%`;
+    document.getElementById('rivalry-rh-pct').textContent   = `Right Hand ${rhPct}%`;
+    document.getElementById('rivalry-left-bar').style.width  = lhPct + '%';
     document.getElementById('rivalry-right-bar').style.width = rhPct + '%';
-    const intensity = total < 10 ? 'Building...' : total < 25 ? 'Heating Up' : total < 40 ? 'Intense' : '🔥 Maximum — Championship Race Is On';
+    const intensity = total < 10 ? 'Building...' : total < 25 ? '⚡ Heating Up' : total < 40 ? '🔥 Intense' : '🔥 Maximum — Championship Race Is On';
     document.getElementById('rivalry-msg').textContent = `Rivalry Intensity: ${intensity}`;
   }
 
-  // Latest results feed (last 5)
-  const recent = [...matches].reverse().slice(0,5);
-  const feedEl = document.getElementById('home-feed');
-  if (recent.length === 0) { feedEl.innerHTML = '<div class="loading">No matches yet</div>'; return; }
-  feedEl.innerHTML = recent.map(m => {
-    const isLeft = m.winner && m.winner.toString().toLowerCase().includes('left');
-    return `<div class="match-feed-item">
-      <div class="match-num">#${m.match_number}</div>
-      <div class="match-desc">${m.title || 'Match #' + m.match_number}${m.moves ? ' — ' + m.moves + ' moves' : ''}</div>
-      <div class="${isLeft ? 'badge-left' : 'badge-right'}">${m.winner || '—'}</div>
-    </div>`;
-  }).join('');
+  // Latest video button — points to most recent match with a highlight_url
+  const latestWithVideo = [...matches].reverse().find(m => m.highlight_url);
+  if (latestWithVideo) {
+    const btn = document.getElementById('latest-video-btn');
+    if (btn) btn.href = latestWithVideo.highlight_url;
+  }
+
+  // Results feed — last 5 matches
+  const recent  = [...matches].reverse().slice(0, 5);
+  const feedEl  = document.getElementById('home-feed');
+  if (recent.length === 0) {
+    feedEl.innerHTML = '<div class="loading">No matches yet</div>';
+  } else {
+    feedEl.innerHTML = recent.map(m => `
+      <div class="match-feed-item">
+        <div class="match-num">#${m.match_number}</div>
+        <div class="match-desc">${m.title || 'Match #' + m.match_number}${m.moves ? ' — ' + m.moves + ' moves' : ''}</div>
+        <div class="${isLeft(m.winner) ? 'badge-left' : 'badge-right'}">${m.winner || '—'}</div>
+      </div>`).join('');
+  }
 
   // Storylines
-  const leader = lhW > rhW ? `Left Hand leads ${lhW}–${rhW}` : rhW > lhW ? `Right Hand leads ${rhW}–${lhW}` : `All square ${lhW}–${rhW}`;
-  document.getElementById('story-leader').textContent = leader;
-  document.getElementById('story-leader-desc').textContent = lhW > rhW ? 'Left Hand in control of Season 1.' : rhW > lhW ? 'Right Hand fighting for the title.' : 'The rivalry is perfectly balanced.';
+  const leader     = lhW > rhW ? `Left Hand leads ${lhW}–${rhW}` : rhW > lhW ? `Right Hand leads ${rhW}–${lhW}` : `All square ${lhW}–${rhW}`;
+  const leaderDesc = lhW > rhW ? 'Left Hand in control of Season 1.' : rhW > lhW ? 'Right Hand fighting for the title.' : 'The rivalry is perfectly balanced.';
+  document.getElementById('story-leader').textContent      = leader;
+  document.getElementById('story-leader-desc').textContent = leaderDesc;
 
   const lhBS = parseInt(lh.best_streak) || 0;
   const rhBS = parseInt(rh.best_streak) || 0;
   const bestStreakHolder = lhBS >= rhBS ? `Left Hand — ${lhBS} win streak` : `Right Hand — ${rhBS} win streak`;
-  document.getElementById('story-record').textContent = bestStreakHolder;
+  document.getElementById('story-record').textContent      = bestStreakHolder;
   document.getElementById('story-record-desc').textContent = 'Best winning streak of Season 1.';
 
-  document.getElementById('story-total').textContent = `${matches.length} matches played`;
+  document.getElementById('story-total').textContent      = `${matches.length} matches played`;
   document.getElementById('story-total-desc').textContent = 'Season 1 is underway. Every match counts.';
-const latestWithVideo = [...matches].reverse().find(m => m.highlight_url);
-if (latestWithVideo) {
-  const btn = document.getElementById('latest-video-btn');
-  if (btn) btn.href = latestWithVideo.highlight_url;
 }
+
+// ═══════════════════════════════════════════════════
+// RENDER — ARCHIVE
+// ═══════════════════════════════════════════════════
 function renderArchive(matches) {
   document.getElementById('archive-subtitle').textContent = `Complete Season 1 Record — ${matches.length} Matches`;
   const el = document.getElementById('archive-list');
   if (matches.length === 0) { el.innerHTML = '<div class="loading">No matches yet</div>'; return; }
 
-  const reversed = [...matches].reverse();
   let html = '';
-  reversed.forEach((m, i) => {
-    const isLeft = m.winner && m.winner.toString().toLowerCase().includes('left');
-    const watchBtn = (FEATURES.showHighlightLinks && m.highlight_url)
+  [...matches].reverse().forEach((m, i) => {
+    const hasVideo = FEATURES.showHighlightLinks && m.highlight_url;
+    const watchBtn = hasVideo
       ? `<a class="play-btn" href="${m.highlight_url}" target="_blank">▶ Watch</a>`
-      : `<span class="play-btn" style="opacity:.3;cursor:default;">▶ Watch</span>`;
-    html += `<div class="archive-row">
-      <div class="archive-num">${m.match_number}</div>
-      <div>
-        <div class="archive-title">${m.title || 'Match #' + m.match_number}</div>
-        <div class="archive-meta">${m.moves ? m.moves + ' moves · ' : ''}${m.winner || '—'} wins${m.date ? ' · ' + m.date : ''}</div>
-      </div>
-      <div class="${isLeft ? 'badge-left' : 'badge-right'}">${m.winner || '—'}</div>
-      ${watchBtn}
-    </div>`;
-    if (i === 4) html += '<div class="ad-inline">In-Feed Ad — 728×60</div>';
-    if (i === 14) html += '<div class="ad-inline">In-Feed Ad — 728×60</div>';
+      : `<span class="play-btn disabled">▶ Watch</span>`;
+    html += `
+      <div class="archive-row">
+        <div class="archive-num">${m.match_number}</div>
+        <div>
+          <div class="archive-title">${m.title || 'Match #' + m.match_number}</div>
+          <div class="archive-meta">${m.moves ? m.moves + ' moves · ' : ''}${m.winner || '—'} wins${m.date ? ' · ' + m.date : ''}</div>
+        </div>
+        <div class="${isLeft(m.winner) ? 'badge-left' : 'badge-right'}">${m.winner || '—'}</div>
+        ${watchBtn}
+      </div>`;
+    if (i === 4 || i === 14) html += '<div class="ad-inline">In-Feed Ad Placement</div>';
   });
   el.innerHTML = html;
 }
 
+// ═══════════════════════════════════════════════════
+// RENDER — PLAYERS
+// ═══════════════════════════════════════════════════
 function renderPlayers(matches, standings) {
-  const lh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('left')) || {};
-  const rh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('right')) || {};
+  const lh    = getPlayer(standings, 'left');
+  const rh    = getPlayer(standings, 'right');
   const total = matches.length;
+  const lhW   = parseInt(lh.wins) || 0;
+  const lhL   = parseInt(lh.losses) || 0;
+  const rhW   = parseInt(rh.wins) || 0;
+  const rhL   = parseInt(rh.losses) || 0;
 
-  const lhW = parseInt(lh.wins) || 0; const lhL = parseInt(lh.losses) || 0;
-  const rhW = parseInt(rh.wins) || 0; const rhL = parseInt(rh.losses) || 0;
+  document.getElementById('lh-record-pill').textContent  = `${lhW}-${lhL}`;
+  document.getElementById('lh-winrate-pill').textContent = winRate(lhW, total);
+  document.getElementById('lh-streak-pill').textContent  = (lh.best_streak || '—') + 'W';
+  document.getElementById('lh-fastest-pill').textContent = (lh.fastest_win  || '—') + ' moves';
 
-  document.getElementById('lh-record-pill').textContent = `${lhW}-${lhL}`;
-  document.getElementById('lh-winrate-pill').textContent = total > 0 ? Math.round((lhW/total)*100) + '%' : '—';
-  document.getElementById('lh-streak-pill').textContent = (lh.best_streak || '—') + 'W';
-  document.getElementById('lh-fastest-pill').textContent = (lh.fastest_win || '—') + ' moves';
-
-  document.getElementById('rh-record-pill').textContent = `${rhW}-${rhL}`;
-  document.getElementById('rh-winrate-pill').textContent = total > 0 ? Math.round((rhW/total)*100) + '%' : '—';
-  document.getElementById('rh-streak-pill').textContent = (rh.best_streak || '—') + 'W';
-  document.getElementById('rh-fastest-pill').textContent = (rh.fastest_win || '—') + ' moves';
+  document.getElementById('rh-record-pill').textContent  = `${rhW}-${rhL}`;
+  document.getElementById('rh-winrate-pill').textContent = winRate(rhW, total);
+  document.getElementById('rh-streak-pill').textContent  = (rh.best_streak || '—') + 'W';
+  document.getElementById('rh-fastest-pill').textContent = (rh.fastest_win  || '—') + ' moves';
 }
 
+// ═══════════════════════════════════════════════════
+// RENDER — STATS
+// ═══════════════════════════════════════════════════
 function renderStats(matches, standings) {
-  const lh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('left')) || {};
-  const rh = standings.find(r => r.player && r.player.toString().toLowerCase().includes('right')) || {};
+  const lh    = getPlayer(standings, 'left');
+  const rh    = getPlayer(standings, 'right');
   const total = matches.length;
-  const lhW = parseInt(lh.wins) || 0;
-  const rhW = parseInt(rh.wins) || 0;
+  const lhW   = parseInt(lh.wins) || 0;
+  const rhW   = parseInt(rh.wins) || 0;
 
   document.getElementById('stats-subtitle').textContent = `Season 1 — Through Match #${total}`;
-  document.getElementById('stat-total').textContent = total;
-  document.getElementById('stat-lh-rate').textContent = total > 0 ? Math.round((lhW/total)*100) + '%' : '—';
-  document.getElementById('stat-rh-rate').textContent = total > 0 ? Math.round((rhW/total)*100) + '%' : '—';
+  document.getElementById('stat-total').textContent     = total;
+  document.getElementById('stat-lh-rate').textContent   = winRate(lhW, total);
+  document.getElementById('stat-rh-rate').textContent   = winRate(rhW, total);
 
-  // Average moves
   const withMoves = matches.filter(m => m.moves && !isNaN(parseInt(m.moves)));
   if (withMoves.length > 0) {
-    const avg = Math.round(withMoves.reduce((s,m) => s + parseInt(m.moves), 0) / withMoves.length);
+    const avg = Math.round(withMoves.reduce((s, m) => s + parseInt(m.moves), 0) / withMoves.length);
     document.getElementById('stat-avg-moves').textContent = avg;
   }
 
   document.getElementById('stat-lh-streak').textContent = lh.best_streak || '—';
   document.getElementById('stat-rh-streak').textContent = rh.best_streak || '—';
 
-  // Fastest win across both
-  const allFastest = [parseInt(lh.fastest_win)||999, parseInt(rh.fastest_win)||999];
-  const fastest = Math.min(...allFastest);
+  const fastest = Math.min(parseInt(lh.fastest_win) || 999, parseInt(rh.fastest_win) || 999);
   document.getElementById('stat-fastest').textContent = fastest < 999 ? fastest : '—';
 
   // H2H bar
   if (total > 0) {
-    const lhFlex = lhW; const rhFlex = rhW;
-    document.getElementById('h2h-left-bar').style.flex = lhFlex;
-    document.getElementById('h2h-right-bar').style.flex = rhFlex;
-    document.getElementById('h2h-left-bar').textContent = `${lhW} Wins`;
+    document.getElementById('h2h-left-bar').style.flex  = lhW;
+    document.getElementById('h2h-right-bar').style.flex = rhW;
+    document.getElementById('h2h-left-bar').textContent  = `${lhW} Wins`;
     document.getElementById('h2h-right-bar').textContent = `${rhW} Wins`;
   }
 
   // Momentum chart
   if (FEATURES.showMomentumChart && matches.length > 1) {
-    let lhRunning = 0; let rhRunning = 0;
-    const lhPts = []; const rhPts = [];
+    let lhR = 0, rhR = 0;
+    const lhPts = [], rhPts = [];
     matches.forEach(m => {
-      const isLeft = m.winner && m.winner.toString().toLowerCase().includes('left');
-      if (isLeft) lhRunning++; else rhRunning++;
-      lhPts.push(lhRunning);
-      rhPts.push(rhRunning);
+      if (isLeft(m.winner)) lhR++; else rhR++;
+      lhPts.push(lhR);
+      rhPts.push(rhR);
     });
-
-    const n = lhPts.length;
+    const n      = lhPts.length;
     const maxVal = Math.max(...lhPts, ...rhPts);
-    const w = 820; const h = 140; const pad = 20;
+    const W = 820, H = 140, pad = 20;
+    const toX = i => pad + (i / (n - 1)) * (W - pad * 2);
+    const toY = v => H - pad - ((v / maxVal) * (H - pad * 2));
+    document.getElementById('chart-left-line').setAttribute('points',
+      lhPts.map((v, i) => `${toX(i).toFixed(1)},${toY(v).toFixed(1)}`).join(' '));
+    document.getElementById('chart-right-line').setAttribute('points',
+      rhPts.map((v, i) => `${toX(i).toFixed(1)},${toY(v).toFixed(1)}`).join(' '));
 
-    const toX = i => pad + (i / (n-1)) * (w - pad*2);
-    const toY = v => h - pad - ((v / maxVal) * (h - pad*2));
-
-    const lhPoints = lhPts.map((v,i) => `${toX(i).toFixed(1)},${toY(v).toFixed(1)}`).join(' ');
-    const rhPoints = rhPts.map((v,i) => `${toX(i).toFixed(1)},${toY(v).toFixed(1)}`).join(' ');
-
-    document.getElementById('chart-left-line').setAttribute('points', lhPoints);
-    document.getElementById('chart-right-line').setAttribute('points', rhPoints);
-
-    // Labels
+    // X-axis labels (up to 5 evenly spaced)
     const labelCount = Math.min(5, n);
-    const step = Math.floor(n / (labelCount-1));
+    const step = Math.floor((n - 1) / (labelCount - 1));
     const labels = [];
     for (let i = 0; i < n; i += step) labels.push(`Match #${matches[i].match_number}`);
-    document.getElementById('chart-labels').textContent = labels.join('     ');
+    document.getElementById('chart-labels').textContent = labels.join('          ');
   }
 }
 
+// ═══════════════════════════════════════════════════
+// RENDER — HALL OF FAME
+// ═══════════════════════════════════════════════════
 function renderHof(hofData) {
   const el = document.getElementById('hof-grid');
   if (!FEATURES.showHallOfFame || hofData.length === 0) {
@@ -660,22 +678,21 @@ function renderHof(hofData) {
   el.innerHTML = hofData.map(row => `
     <div class="hof-card">
       <div class="hof-cat">${row.category || ''}</div>
-      <div class="hof-title">${row.match_title || row.match_number ? 'Match #' + row.match_number + (row.match_title ? ' — "' + row.match_title + '"' : '') : ''}</div>
+      <div class="hof-title">${row.match_number ? 'Match #' + row.match_number + (row.match_title ? ' — "' + row.match_title + '"' : '') : (row.match_title || '')}</div>
       <div class="hof-desc">${row.description || ''}</div>
     </div>`).join('');
 }
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 // NAVIGATION
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 function showPage(id, btn) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
   btn.classList.add('active');
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }
-
 function showPlayer(side, btn) {
   document.querySelectorAll('.player-sub').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -683,16 +700,15 @@ function showPlayer(side, btn) {
   btn.classList.add('active');
 }
 
-// ═══════════════════════════════════════════
-// INIT — fetch all data and render everything
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════
 async function init() {
   const [matches, standings, hof] = await Promise.all([
     fetchTab(TABS.matches),
     fetchTab(TABS.standings),
     fetchTab(TABS.hof)
   ]);
-
   renderTicker(matches, standings);
   renderHome(matches, standings);
   renderArchive(matches);
